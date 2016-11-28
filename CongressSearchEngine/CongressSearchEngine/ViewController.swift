@@ -2,11 +2,12 @@
 //  ViewController.swift
 //  CongressSearchEngine
 //
-//  Created by Elliscope Mingzhe Fang on 11/27/16.
+//  Created by Elliscope Mingzhe Fang on 11/28/16.
 //  Copyright © 2016 Elliscope Mingzhe Fang. All rights reserved.
 //
 
 import UIKit
+import SlideMenuControllerSwift
 
 class ViewController: UIViewController {
 

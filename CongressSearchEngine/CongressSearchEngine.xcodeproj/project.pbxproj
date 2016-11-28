@@ -7,134 +7,177 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		977043F81DEBFA4E00CFD5E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977043F71DEBFA4E00CFD5E6 /* AppDelegate.swift */; };
-		977043FA1DEBFA4E00CFD5E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977043F91DEBFA4E00CFD5E6 /* ViewController.swift */; };
-		977043FD1DEBFA4E00CFD5E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 977043FB1DEBFA4E00CFD5E6 /* Main.storyboard */; };
-		977043FF1DEBFA4E00CFD5E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 977043FE1DEBFA4E00CFD5E6 /* Assets.xcassets */; };
-		977044021DEBFA4E00CFD5E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 977044001DEBFA4E00CFD5E6 /* LaunchScreen.storyboard */; };
-		9770440D1DEBFA4E00CFD5E6 /* CongressSearchEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9770440C1DEBFA4E00CFD5E6 /* CongressSearchEngineTests.swift */; };
-		977044181DEBFA4E00CFD5E6 /* CongressSearchEngineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977044171DEBFA4E00CFD5E6 /* CongressSearchEngineUITests.swift */; };
+		97B9BF441DECB13A00888BA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B9BF431DECB13A00888BA4 /* AppDelegate.swift */; };
+		97B9BF461DECB13A00888BA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B9BF451DECB13A00888BA4 /* ViewController.swift */; };
+		97B9BF491DECB13A00888BA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B9BF471DECB13A00888BA4 /* Main.storyboard */; };
+		97B9BF4B1DECB13A00888BA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B9BF4A1DECB13A00888BA4 /* Assets.xcassets */; };
+		97B9BF4E1DECB13A00888BA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B9BF4C1DECB13A00888BA4 /* LaunchScreen.storyboard */; };
+		97B9BF591DECB13A00888BA4 /* CongressSearchEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B9BF581DECB13A00888BA4 /* CongressSearchEngineTests.swift */; };
+		97B9BF641DECB13A00888BA4 /* CongressSearchEngineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B9BF631DECB13A00888BA4 /* CongressSearchEngineUITests.swift */; };
+		9FF3233E03CC77383BE2CDCD /* Pods_CongressSearchEngineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31D2B37D489206FDB4F3AF0B /* Pods_CongressSearchEngineUITests.framework */; };
+		A81A3A9F375C48E409938F00 /* Pods_CongressSearchEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 239618F6163BA41CF5C66626 /* Pods_CongressSearchEngine.framework */; };
+		FFE5FD3154A2489F9B643A25 /* Pods_CongressSearchEngineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B8BCCAF0D607B8A1FDFF27 /* Pods_CongressSearchEngineTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		977044091DEBFA4E00CFD5E6 /* PBXContainerItemProxy */ = {
+		97B9BF551DECB13A00888BA4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 977043EC1DEBFA4E00CFD5E6 /* Project object */;
+			containerPortal = 97B9BF381DECB13900888BA4 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 977043F31DEBFA4E00CFD5E6;
+			remoteGlobalIDString = 97B9BF3F1DECB13900888BA4;
 			remoteInfo = CongressSearchEngine;
 		};
-		977044141DEBFA4E00CFD5E6 /* PBXContainerItemProxy */ = {
+		97B9BF601DECB13A00888BA4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 977043EC1DEBFA4E00CFD5E6 /* Project object */;
+			containerPortal = 97B9BF381DECB13900888BA4 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 977043F31DEBFA4E00CFD5E6;
+			remoteGlobalIDString = 97B9BF3F1DECB13900888BA4;
 			remoteInfo = CongressSearchEngine;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		977043F41DEBFA4E00CFD5E6 /* CongressSearchEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CongressSearchEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		977043F71DEBFA4E00CFD5E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		977043F91DEBFA4E00CFD5E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		977043FC1DEBFA4E00CFD5E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		977043FE1DEBFA4E00CFD5E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		977044011DEBFA4E00CFD5E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		977044031DEBFA4E00CFD5E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		977044081DEBFA4E00CFD5E6 /* CongressSearchEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CongressSearchEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9770440C1DEBFA4E00CFD5E6 /* CongressSearchEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongressSearchEngineTests.swift; sourceTree = "<group>"; };
-		9770440E1DEBFA4E00CFD5E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		977044131DEBFA4E00CFD5E6 /* CongressSearchEngineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CongressSearchEngineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		977044171DEBFA4E00CFD5E6 /* CongressSearchEngineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongressSearchEngineUITests.swift; sourceTree = "<group>"; };
-		977044191DEBFA4E00CFD5E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		239618F6163BA41CF5C66626 /* Pods_CongressSearchEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CongressSearchEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C82944BDC2A533BF20D636F /* Pods-CongressSearchEngine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CongressSearchEngine.release.xcconfig"; path = "Pods/Target Support Files/Pods-CongressSearchEngine/Pods-CongressSearchEngine.release.xcconfig"; sourceTree = "<group>"; };
+		31D2B37D489206FDB4F3AF0B /* Pods_CongressSearchEngineUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CongressSearchEngineUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CB31554445528B214970CD0 /* Pods-CongressSearchEngine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CongressSearchEngine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CongressSearchEngine/Pods-CongressSearchEngine.debug.xcconfig"; sourceTree = "<group>"; };
+		8A4250FA2BAE3EE98F4DCB13 /* Pods-CongressSearchEngineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CongressSearchEngineTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CongressSearchEngineTests/Pods-CongressSearchEngineTests.debug.xcconfig"; sourceTree = "<group>"; };
+		97B9BF401DECB13A00888BA4 /* CongressSearchEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CongressSearchEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97B9BF431DECB13A00888BA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		97B9BF451DECB13A00888BA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		97B9BF481DECB13A00888BA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97B9BF4A1DECB13A00888BA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97B9BF4D1DECB13A00888BA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		97B9BF4F1DECB13A00888BA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97B9BF541DECB13A00888BA4 /* CongressSearchEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CongressSearchEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97B9BF581DECB13A00888BA4 /* CongressSearchEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongressSearchEngineTests.swift; sourceTree = "<group>"; };
+		97B9BF5A1DECB13A00888BA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97B9BF5F1DECB13A00888BA4 /* CongressSearchEngineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CongressSearchEngineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97B9BF631DECB13A00888BA4 /* CongressSearchEngineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongressSearchEngineUITests.swift; sourceTree = "<group>"; };
+		97B9BF651DECB13A00888BA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E7C207193BD24A9F618401B /* Pods-CongressSearchEngineUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CongressSearchEngineUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CongressSearchEngineUITests/Pods-CongressSearchEngineUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B4B8BCCAF0D607B8A1FDFF27 /* Pods_CongressSearchEngineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CongressSearchEngineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E27552C3250F1496AE5DFC51 /* Pods-CongressSearchEngineUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CongressSearchEngineUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CongressSearchEngineUITests/Pods-CongressSearchEngineUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EDB9465CC133956AC9A0AD07 /* Pods-CongressSearchEngineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CongressSearchEngineTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CongressSearchEngineTests/Pods-CongressSearchEngineTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		977043F11DEBFA4E00CFD5E6 /* Frameworks */ = {
+		97B9BF3D1DECB13900888BA4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A81A3A9F375C48E409938F00 /* Pods_CongressSearchEngine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		977044051DEBFA4E00CFD5E6 /* Frameworks */ = {
+		97B9BF511DECB13A00888BA4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFE5FD3154A2489F9B643A25 /* Pods_CongressSearchEngineTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		977044101DEBFA4E00CFD5E6 /* Frameworks */ = {
+		97B9BF5C1DECB13A00888BA4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FF3233E03CC77383BE2CDCD /* Pods_CongressSearchEngineUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		977043EB1DEBFA4E00CFD5E6 = {
+		56AA721FE4B3D0681B9862A1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				977043F61DEBFA4E00CFD5E6 /* CongressSearchEngine */,
-				9770440B1DEBFA4E00CFD5E6 /* CongressSearchEngineTests */,
-				977044161DEBFA4E00CFD5E6 /* CongressSearchEngineUITests */,
-				977043F51DEBFA4E00CFD5E6 /* Products */,
+				6CB31554445528B214970CD0 /* Pods-CongressSearchEngine.debug.xcconfig */,
+				2C82944BDC2A533BF20D636F /* Pods-CongressSearchEngine.release.xcconfig */,
+				8A4250FA2BAE3EE98F4DCB13 /* Pods-CongressSearchEngineTests.debug.xcconfig */,
+				EDB9465CC133956AC9A0AD07 /* Pods-CongressSearchEngineTests.release.xcconfig */,
+				9E7C207193BD24A9F618401B /* Pods-CongressSearchEngineUITests.debug.xcconfig */,
+				E27552C3250F1496AE5DFC51 /* Pods-CongressSearchEngineUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		97B9BF371DECB13900888BA4 = {
+			isa = PBXGroup;
+			children = (
+				97B9BF421DECB13A00888BA4 /* CongressSearchEngine */,
+				97B9BF571DECB13A00888BA4 /* CongressSearchEngineTests */,
+				97B9BF621DECB13A00888BA4 /* CongressSearchEngineUITests */,
+				97B9BF411DECB13A00888BA4 /* Products */,
+				56AA721FE4B3D0681B9862A1 /* Pods */,
+				A069D922E2E780C8847C8704 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		977043F51DEBFA4E00CFD5E6 /* Products */ = {
+		97B9BF411DECB13A00888BA4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				977043F41DEBFA4E00CFD5E6 /* CongressSearchEngine.app */,
-				977044081DEBFA4E00CFD5E6 /* CongressSearchEngineTests.xctest */,
-				977044131DEBFA4E00CFD5E6 /* CongressSearchEngineUITests.xctest */,
+				97B9BF401DECB13A00888BA4 /* CongressSearchEngine.app */,
+				97B9BF541DECB13A00888BA4 /* CongressSearchEngineTests.xctest */,
+				97B9BF5F1DECB13A00888BA4 /* CongressSearchEngineUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		977043F61DEBFA4E00CFD5E6 /* CongressSearchEngine */ = {
+		97B9BF421DECB13A00888BA4 /* CongressSearchEngine */ = {
 			isa = PBXGroup;
 			children = (
-				977043F71DEBFA4E00CFD5E6 /* AppDelegate.swift */,
-				977043F91DEBFA4E00CFD5E6 /* ViewController.swift */,
-				977043FB1DEBFA4E00CFD5E6 /* Main.storyboard */,
-				977043FE1DEBFA4E00CFD5E6 /* Assets.xcassets */,
-				977044001DEBFA4E00CFD5E6 /* LaunchScreen.storyboard */,
-				977044031DEBFA4E00CFD5E6 /* Info.plist */,
+				97B9BF431DECB13A00888BA4 /* AppDelegate.swift */,
+				97B9BF451DECB13A00888BA4 /* ViewController.swift */,
+				97B9BF471DECB13A00888BA4 /* Main.storyboard */,
+				97B9BF4A1DECB13A00888BA4 /* Assets.xcassets */,
+				97B9BF4C1DECB13A00888BA4 /* LaunchScreen.storyboard */,
+				97B9BF4F1DECB13A00888BA4 /* Info.plist */,
 			);
 			path = CongressSearchEngine;
 			sourceTree = "<group>";
 		};
-		9770440B1DEBFA4E00CFD5E6 /* CongressSearchEngineTests */ = {
+		97B9BF571DECB13A00888BA4 /* CongressSearchEngineTests */ = {
 			isa = PBXGroup;
 			children = (
-				9770440C1DEBFA4E00CFD5E6 /* CongressSearchEngineTests.swift */,
-				9770440E1DEBFA4E00CFD5E6 /* Info.plist */,
+				97B9BF581DECB13A00888BA4 /* CongressSearchEngineTests.swift */,
+				97B9BF5A1DECB13A00888BA4 /* Info.plist */,
 			);
 			path = CongressSearchEngineTests;
 			sourceTree = "<group>";
 		};
-		977044161DEBFA4E00CFD5E6 /* CongressSearchEngineUITests */ = {
+		97B9BF621DECB13A00888BA4 /* CongressSearchEngineUITests */ = {
 			isa = PBXGroup;
 			children = (
-				977044171DEBFA4E00CFD5E6 /* CongressSearchEngineUITests.swift */,
-				977044191DEBFA4E00CFD5E6 /* Info.plist */,
+				97B9BF631DECB13A00888BA4 /* CongressSearchEngineUITests.swift */,
+				97B9BF651DECB13A00888BA4 /* Info.plist */,
 			);
 			path = CongressSearchEngineUITests;
+			sourceTree = "<group>";
+		};
+		A069D922E2E780C8847C8704 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				239618F6163BA41CF5C66626 /* Pods_CongressSearchEngine.framework */,
+				B4B8BCCAF0D607B8A1FDFF27 /* Pods_CongressSearchEngineTests.framework */,
+				31D2B37D489206FDB4F3AF0B /* Pods_CongressSearchEngineUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		977043F31DEBFA4E00CFD5E6 /* CongressSearchEngine */ = {
+		97B9BF3F1DECB13900888BA4 /* CongressSearchEngine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9770441C1DEBFA4E00CFD5E6 /* Build configuration list for PBXNativeTarget "CongressSearchEngine" */;
+			buildConfigurationList = 97B9BF681DECB13A00888BA4 /* Build configuration list for PBXNativeTarget "CongressSearchEngine" */;
 			buildPhases = (
-				977043F01DEBFA4E00CFD5E6 /* Sources */,
-				977043F11DEBFA4E00CFD5E6 /* Frameworks */,
-				977043F21DEBFA4E00CFD5E6 /* Resources */,
+				0A64B11A2D9D43451CBF09E3 /* [CP] Check Pods Manifest.lock */,
+				97B9BF3C1DECB13900888BA4 /* Sources */,
+				97B9BF3D1DECB13900888BA4 /* Frameworks */,
+				97B9BF3E1DECB13900888BA4 /* Resources */,
+				9C26D65A90313B5802EB1282 /* [CP] Embed Pods Frameworks */,
+				4830AD4C8A093D6F6C224041 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,75 +185,81 @@
 			);
 			name = CongressSearchEngine;
 			productName = CongressSearchEngine;
-			productReference = 977043F41DEBFA4E00CFD5E6 /* CongressSearchEngine.app */;
+			productReference = 97B9BF401DECB13A00888BA4 /* CongressSearchEngine.app */;
 			productType = "com.apple.product-type.application";
 		};
-		977044071DEBFA4E00CFD5E6 /* CongressSearchEngineTests */ = {
+		97B9BF531DECB13A00888BA4 /* CongressSearchEngineTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9770441F1DEBFA4E00CFD5E6 /* Build configuration list for PBXNativeTarget "CongressSearchEngineTests" */;
+			buildConfigurationList = 97B9BF6B1DECB13A00888BA4 /* Build configuration list for PBXNativeTarget "CongressSearchEngineTests" */;
 			buildPhases = (
-				977044041DEBFA4E00CFD5E6 /* Sources */,
-				977044051DEBFA4E00CFD5E6 /* Frameworks */,
-				977044061DEBFA4E00CFD5E6 /* Resources */,
+				E1038B7ACA41C15944B18342 /* [CP] Check Pods Manifest.lock */,
+				97B9BF501DECB13A00888BA4 /* Sources */,
+				97B9BF511DECB13A00888BA4 /* Frameworks */,
+				97B9BF521DECB13A00888BA4 /* Resources */,
+				082B882D5A5D3049EDE91E74 /* [CP] Embed Pods Frameworks */,
+				0072F606D64A28E9AAC8DCA4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9770440A1DEBFA4E00CFD5E6 /* PBXTargetDependency */,
+				97B9BF561DECB13A00888BA4 /* PBXTargetDependency */,
 			);
 			name = CongressSearchEngineTests;
 			productName = CongressSearchEngineTests;
-			productReference = 977044081DEBFA4E00CFD5E6 /* CongressSearchEngineTests.xctest */;
+			productReference = 97B9BF541DECB13A00888BA4 /* CongressSearchEngineTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		977044121DEBFA4E00CFD5E6 /* CongressSearchEngineUITests */ = {
+		97B9BF5E1DECB13A00888BA4 /* CongressSearchEngineUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 977044221DEBFA4E00CFD5E6 /* Build configuration list for PBXNativeTarget "CongressSearchEngineUITests" */;
+			buildConfigurationList = 97B9BF6E1DECB13A00888BA4 /* Build configuration list for PBXNativeTarget "CongressSearchEngineUITests" */;
 			buildPhases = (
-				9770440F1DEBFA4E00CFD5E6 /* Sources */,
-				977044101DEBFA4E00CFD5E6 /* Frameworks */,
-				977044111DEBFA4E00CFD5E6 /* Resources */,
+				88509CB84D7A30178C194A3C /* [CP] Check Pods Manifest.lock */,
+				97B9BF5B1DECB13A00888BA4 /* Sources */,
+				97B9BF5C1DECB13A00888BA4 /* Frameworks */,
+				97B9BF5D1DECB13A00888BA4 /* Resources */,
+				0DEFF2B61A59FC8AE1A77C78 /* [CP] Embed Pods Frameworks */,
+				2FC11F2C5D5DD08845356F02 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				977044151DEBFA4E00CFD5E6 /* PBXTargetDependency */,
+				97B9BF611DECB13A00888BA4 /* PBXTargetDependency */,
 			);
 			name = CongressSearchEngineUITests;
 			productName = CongressSearchEngineUITests;
-			productReference = 977044131DEBFA4E00CFD5E6 /* CongressSearchEngineUITests.xctest */;
+			productReference = 97B9BF5F1DECB13A00888BA4 /* CongressSearchEngineUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		977043EC1DEBFA4E00CFD5E6 /* Project object */ = {
+		97B9BF381DECB13900888BA4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Elliscope Mingzhe Fang";
 				TargetAttributes = {
-					977043F31DEBFA4E00CFD5E6 = {
+					97B9BF3F1DECB13900888BA4 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 39MRTM344T;
 						ProvisioningStyle = Automatic;
 					};
-					977044071DEBFA4E00CFD5E6 = {
+					97B9BF531DECB13A00888BA4 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 39MRTM344T;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 977043F31DEBFA4E00CFD5E6;
+						TestTargetID = 97B9BF3F1DECB13900888BA4;
 					};
-					977044121DEBFA4E00CFD5E6 = {
+					97B9BF5E1DECB13A00888BA4 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 39MRTM344T;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 977043F31DEBFA4E00CFD5E6;
+						TestTargetID = 97B9BF3F1DECB13900888BA4;
 					};
 				};
 			};
-			buildConfigurationList = 977043EF1DEBFA4E00CFD5E6 /* Build configuration list for PBXProject "CongressSearchEngine" */;
+			buildConfigurationList = 97B9BF3B1DECB13900888BA4 /* Build configuration list for PBXProject "CongressSearchEngine" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -218,37 +267,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 977043EB1DEBFA4E00CFD5E6;
-			productRefGroup = 977043F51DEBFA4E00CFD5E6 /* Products */;
+			mainGroup = 97B9BF371DECB13900888BA4;
+			productRefGroup = 97B9BF411DECB13A00888BA4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				977043F31DEBFA4E00CFD5E6 /* CongressSearchEngine */,
-				977044071DEBFA4E00CFD5E6 /* CongressSearchEngineTests */,
-				977044121DEBFA4E00CFD5E6 /* CongressSearchEngineUITests */,
+				97B9BF3F1DECB13900888BA4 /* CongressSearchEngine */,
+				97B9BF531DECB13A00888BA4 /* CongressSearchEngineTests */,
+				97B9BF5E1DECB13A00888BA4 /* CongressSearchEngineUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		977043F21DEBFA4E00CFD5E6 /* Resources */ = {
+		97B9BF3E1DECB13900888BA4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				977044021DEBFA4E00CFD5E6 /* LaunchScreen.storyboard in Resources */,
-				977043FF1DEBFA4E00CFD5E6 /* Assets.xcassets in Resources */,
-				977043FD1DEBFA4E00CFD5E6 /* Main.storyboard in Resources */,
+				97B9BF4E1DECB13A00888BA4 /* LaunchScreen.storyboard in Resources */,
+				97B9BF4B1DECB13A00888BA4 /* Assets.xcassets in Resources */,
+				97B9BF491DECB13A00888BA4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		977044061DEBFA4E00CFD5E6 /* Resources */ = {
+		97B9BF521DECB13A00888BA4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		977044111DEBFA4E00CFD5E6 /* Resources */ = {
+		97B9BF5D1DECB13A00888BA4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -257,60 +306,198 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0072F606D64A28E9AAC8DCA4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CongressSearchEngineTests/Pods-CongressSearchEngineTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		082B882D5A5D3049EDE91E74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CongressSearchEngineTests/Pods-CongressSearchEngineTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0A64B11A2D9D43451CBF09E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0DEFF2B61A59FC8AE1A77C78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CongressSearchEngineUITests/Pods-CongressSearchEngineUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2FC11F2C5D5DD08845356F02 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CongressSearchEngineUITests/Pods-CongressSearchEngineUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4830AD4C8A093D6F6C224041 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CongressSearchEngine/Pods-CongressSearchEngine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88509CB84D7A30178C194A3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C26D65A90313B5802EB1282 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CongressSearchEngine/Pods-CongressSearchEngine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1038B7ACA41C15944B18342 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		977043F01DEBFA4E00CFD5E6 /* Sources */ = {
+		97B9BF3C1DECB13900888BA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				977043FA1DEBFA4E00CFD5E6 /* ViewController.swift in Sources */,
-				977043F81DEBFA4E00CFD5E6 /* AppDelegate.swift in Sources */,
+				97B9BF461DECB13A00888BA4 /* ViewController.swift in Sources */,
+				97B9BF441DECB13A00888BA4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		977044041DEBFA4E00CFD5E6 /* Sources */ = {
+		97B9BF501DECB13A00888BA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9770440D1DEBFA4E00CFD5E6 /* CongressSearchEngineTests.swift in Sources */,
+				97B9BF591DECB13A00888BA4 /* CongressSearchEngineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9770440F1DEBFA4E00CFD5E6 /* Sources */ = {
+		97B9BF5B1DECB13A00888BA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				977044181DEBFA4E00CFD5E6 /* CongressSearchEngineUITests.swift in Sources */,
+				97B9BF641DECB13A00888BA4 /* CongressSearchEngineUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9770440A1DEBFA4E00CFD5E6 /* PBXTargetDependency */ = {
+		97B9BF561DECB13A00888BA4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 977043F31DEBFA4E00CFD5E6 /* CongressSearchEngine */;
-			targetProxy = 977044091DEBFA4E00CFD5E6 /* PBXContainerItemProxy */;
+			target = 97B9BF3F1DECB13900888BA4 /* CongressSearchEngine */;
+			targetProxy = 97B9BF551DECB13A00888BA4 /* PBXContainerItemProxy */;
 		};
-		977044151DEBFA4E00CFD5E6 /* PBXTargetDependency */ = {
+		97B9BF611DECB13A00888BA4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 977043F31DEBFA4E00CFD5E6 /* CongressSearchEngine */;
-			targetProxy = 977044141DEBFA4E00CFD5E6 /* PBXContainerItemProxy */;
+			target = 97B9BF3F1DECB13900888BA4 /* CongressSearchEngine */;
+			targetProxy = 97B9BF601DECB13A00888BA4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		977043FB1DEBFA4E00CFD5E6 /* Main.storyboard */ = {
+		97B9BF471DECB13A00888BA4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				977043FC1DEBFA4E00CFD5E6 /* Base */,
+				97B9BF481DECB13A00888BA4 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		977044001DEBFA4E00CFD5E6 /* LaunchScreen.storyboard */ = {
+		97B9BF4C1DECB13A00888BA4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				977044011DEBFA4E00CFD5E6 /* Base */,
+				97B9BF4D1DECB13A00888BA4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -318,7 +505,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		9770441A1DEBFA4E00CFD5E6 /* Debug */ = {
+		97B9BF661DECB13A00888BA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -367,7 +554,7 @@
 			};
 			name = Debug;
 		};
-		9770441B1DEBFA4E00CFD5E6 /* Release */ = {
+		97B9BF671DECB13A00888BA4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -409,8 +596,9 @@
 			};
 			name = Release;
 		};
-		9770441D1DEBFA4E00CFD5E6 /* Debug */ = {
+		97B9BF691DECB13A00888BA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CB31554445528B214970CD0 /* Pods-CongressSearchEngine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 39MRTM344T;
@@ -422,8 +610,9 @@
 			};
 			name = Debug;
 		};
-		9770441E1DEBFA4E00CFD5E6 /* Release */ = {
+		97B9BF6A1DECB13A00888BA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C82944BDC2A533BF20D636F /* Pods-CongressSearchEngine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 39MRTM344T;
@@ -435,8 +624,9 @@
 			};
 			name = Release;
 		};
-		977044201DEBFA4E00CFD5E6 /* Debug */ = {
+		97B9BF6C1DECB13A00888BA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A4250FA2BAE3EE98F4DCB13 /* Pods-CongressSearchEngineTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -450,8 +640,9 @@
 			};
 			name = Debug;
 		};
-		977044211DEBFA4E00CFD5E6 /* Release */ = {
+		97B9BF6D1DECB13A00888BA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDB9465CC133956AC9A0AD07 /* Pods-CongressSearchEngineTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -465,8 +656,9 @@
 			};
 			name = Release;
 		};
-		977044231DEBFA4E00CFD5E6 /* Debug */ = {
+		97B9BF6F1DECB13A00888BA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E7C207193BD24A9F618401B /* Pods-CongressSearchEngineUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 39MRTM344T;
@@ -479,8 +671,9 @@
 			};
 			name = Debug;
 		};
-		977044241DEBFA4E00CFD5E6 /* Release */ = {
+		97B9BF701DECB13A00888BA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E27552C3250F1496AE5DFC51 /* Pods-CongressSearchEngineUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 39MRTM344T;
@@ -496,40 +689,40 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		977043EF1DEBFA4E00CFD5E6 /* Build configuration list for PBXProject "CongressSearchEngine" */ = {
+		97B9BF3B1DECB13900888BA4 /* Build configuration list for PBXProject "CongressSearchEngine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9770441A1DEBFA4E00CFD5E6 /* Debug */,
-				9770441B1DEBFA4E00CFD5E6 /* Release */,
+				97B9BF661DECB13A00888BA4 /* Debug */,
+				97B9BF671DECB13A00888BA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9770441C1DEBFA4E00CFD5E6 /* Build configuration list for PBXNativeTarget "CongressSearchEngine" */ = {
+		97B9BF681DECB13A00888BA4 /* Build configuration list for PBXNativeTarget "CongressSearchEngine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9770441D1DEBFA4E00CFD5E6 /* Debug */,
-				9770441E1DEBFA4E00CFD5E6 /* Release */,
+				97B9BF691DECB13A00888BA4 /* Debug */,
+				97B9BF6A1DECB13A00888BA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		9770441F1DEBFA4E00CFD5E6 /* Build configuration list for PBXNativeTarget "CongressSearchEngineTests" */ = {
+		97B9BF6B1DECB13A00888BA4 /* Build configuration list for PBXNativeTarget "CongressSearchEngineTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				977044201DEBFA4E00CFD5E6 /* Debug */,
-				977044211DEBFA4E00CFD5E6 /* Release */,
+				97B9BF6C1DECB13A00888BA4 /* Debug */,
+				97B9BF6D1DECB13A00888BA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		977044221DEBFA4E00CFD5E6 /* Build configuration list for PBXNativeTarget "CongressSearchEngineUITests" */ = {
+		97B9BF6E1DECB13A00888BA4 /* Build configuration list for PBXNativeTarget "CongressSearchEngineUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				977044231DEBFA4E00CFD5E6 /* Debug */,
-				977044241DEBFA4E00CFD5E6 /* Release */,
+				97B9BF6F1DECB13A00888BA4 /* Debug */,
+				97B9BF701DECB13A00888BA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 977043EC1DEBFA4E00CFD5E6 /* Project object */;
+	rootObject = 97B9BF381DECB13900888BA4 /* Project object */;
 }

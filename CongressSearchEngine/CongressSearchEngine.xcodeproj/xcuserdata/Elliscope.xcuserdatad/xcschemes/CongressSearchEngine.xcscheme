@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "977043F31DEBFA4E00CFD5E6"
+               BlueprintIdentifier = "97B9BF3F1DECB13900888BA4"
                BuildableName = "CongressSearchEngine.app"
                BlueprintName = "CongressSearchEngine"
                ReferencedContainer = "container:CongressSearchEngine.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "977044071DEBFA4E00CFD5E6"
+               BlueprintIdentifier = "97B9BF531DECB13A00888BA4"
                BuildableName = "CongressSearchEngineTests.xctest"
                BlueprintName = "CongressSearchEngineTests"
                ReferencedContainer = "container:CongressSearchEngine.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "977044121DEBFA4E00CFD5E6"
+               BlueprintIdentifier = "97B9BF5E1DECB13A00888BA4"
                BuildableName = "CongressSearchEngineUITests.xctest"
                BlueprintName = "CongressSearchEngineUITests"
                ReferencedContainer = "container:CongressSearchEngine.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "977043F31DEBFA4E00CFD5E6"
+            BlueprintIdentifier = "97B9BF3F1DECB13900888BA4"
             BuildableName = "CongressSearchEngine.app"
             BlueprintName = "CongressSearchEngine"
             ReferencedContainer = "container:CongressSearchEngine.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "977043F31DEBFA4E00CFD5E6"
+            BlueprintIdentifier = "97B9BF3F1DECB13900888BA4"
             BuildableName = "CongressSearchEngine.app"
             BlueprintName = "CongressSearchEngine"
             ReferencedContainer = "container:CongressSearchEngine.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "977043F31DEBFA4E00CFD5E6"
+            BlueprintIdentifier = "97B9BF3F1DECB13900888BA4"
             BuildableName = "CongressSearchEngine.app"
             BlueprintName = "CongressSearchEngine"
             ReferencedContainer = "container:CongressSearchEngine.xcodeproj">
