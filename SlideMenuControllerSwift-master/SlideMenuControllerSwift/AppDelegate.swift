@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let mainViewController = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
         let leftViewController = storyboard.instantiateViewController(withIdentifier: "LeftViewController") as! LeftViewController
+
         
         let nvc: UINavigationController = UINavigationController(rootViewController: mainViewController)
         

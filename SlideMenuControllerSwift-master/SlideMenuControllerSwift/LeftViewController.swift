@@ -2,7 +2,7 @@
 //  LeftViewController.swift
 //  SlideMenuControllerSwift
 //
-//  Created by Yuji Hato on 12/3/14.
+
 //
 
 import UIKit
@@ -55,8 +55,9 @@ class LeftViewController : UIViewController, LeftMenuProtocol {
         
         self.tableView.registerCellClass(BaseTableViewCell.self)
         
-        self.imageHeaderView = ImageHeaderView.loadNib()
-        self.view.addSubview(self.imageHeaderView)
+        //left bar view image loading
+        //self.imageHeaderView = ImageHeaderView.loadNib()
+        //self.view.addSubview(self.imageHeaderView)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -65,7 +66,7 @@ class LeftViewController : UIViewController, LeftMenuProtocol {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        self.imageHeaderView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 160)
+        //self.imageHeaderView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 160)
         self.view.layoutIfNeeded()
     }
     
