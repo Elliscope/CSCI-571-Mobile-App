@@ -16,12 +16,13 @@ class MainViewController: UIViewController, UITabBarDelegate {
     let arrIndexSection = ["A","B","C","D", "E", "F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
     var section_size = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
     var state_index_dic:[Character:Int] = ["A":0,"B":1,"C":2,"D":3, "E":4, "F":5,"G":6,"H":7,"I":8,"J":9,"K":10,"L":11,"M":12,"N":13,"O":14,"P":15,"Q":16,"R":17,"S":18,"T":19,"U":20,"V":21,"W":22,"X":23,"Y":24,"Z":25 ]
+    var state_to_index_dic:[Int:Character] = [0:"A",1:"B",2:"C",3:"D", 4:"E", 5:"F",6:"G",7:"H",8:"I",9:"J",10:"K",11:"L",12:"M",13:"N",14:"O",15:"P",16:"Q",17:"R",18:"S",19:"T",20:"U",21:"V",22:"W",23:"X",24:"Y",25:"Z" ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.registerCellNib(DataTableViewCell.self)
         
-        Alamofire.request("https://congress.api.sunlightfoundation.com/legislators?order=state__asc&per_page=all").responseJSON { response in
+        Alamofire.request("https://congress.api.sunlightfoundation.com/legislators?per_page=all&order=state__asc").responseJSON { response in
             let json = JSON(response.result.value!)
             self.data = json["results"].arrayValue
             print(self.data)
@@ -98,7 +99,6 @@ extension MainViewController : UITableViewDelegate {
     }
     
     
-    
     //the part of code that navigates towards to the subcontentViewController. Need to pass in parameters.
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "SubContentsViewController", bundle: nil)
@@ -110,36 +110,33 @@ extension MainViewController : UITableViewDelegate {
 extension MainViewController : UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int{
-        return 26
+        return self.section_size.count
     }
     
-    
-//    func tableView(_ tableView: UITableView,titleForHeaderInSection section: Int) -> String?{
-//        
-//        return
-//    }
-//    
-//    func tableView(_ tableView: UITableView,sectionForSectionIndexTitle title: String,at index: Int) -> Int{
-//        
-//        return
-//    }
-    
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.data.count
+        return self.section_size[section]
     }
      
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)  as! LegislatorCustomeCell
 
-        cell.name.text = self.data[indexPath.row]["first_name"].string! + " " + self.data[indexPath.row]["last_name"].string!
-        cell.state.text = self.data[indexPath.row]["state_name"].string!
+        var s = 0;
+        let limit = indexPath.section
+        var counter = 0
+        print(indexPath)
+        
+        while s < limit{
+            counter = counter + self.section_size[s]
+            s += 1
+        }
+        cell.name.text = self.data[counter+indexPath.row]["first_name"].string! + " " + self.data[counter+indexPath.row]["last_name"].string!
+        cell.state.text = self.data[counter+indexPath.row]["state_name"].string!
         
         
-        let img_url = "https://theunitedstates.io/images/congress/original/"+self.data[indexPath.row]["bioguide_id"].string!+".jpg"
+        let img_url = "https://theunitedstates.io/images/congress/original/"+self.data[s+indexPath.row]["bioguide_id"].string!+".jpg"
         let url = URL(string: img_url)
         DispatchQueue.global().async {
-            let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
+            let data = try? Data(contentsOf: url!)
             DispatchQueue.main.async {
                 if(data != nil){
                     cell.pro_img.image = UIImage(data: data!)
@@ -148,6 +145,13 @@ extension MainViewController : UITableViewDataSource {
         }
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if (self.section_size[section]==0){
+            return ""
+        }
+        return String(describing: self.state_to_index_dic[section]!)
     }
 }
 
@@ -170,31 +174,3 @@ extension MainViewController : SlideMenuControllerDelegate {
     }
     
 }
-
-
-//extension String {
-//    
-//    var length: Int {
-//        return self.characters.count
-//    }
-//    
-//    subscript (r: Range<Int>) -> String {
-//        let range = Range(uncheckedBounds: (lower: max(0, min(length, r.lowerBound)),
-//                                            upper: min(length, max(0, r.upperBound))))
-//        let start = index(startIndex, offsetBy: range.lowerBound)
-//        let end = index(start, offsetBy: range.upperBound - range.lowerBound)
-//        return self[Range(start ..< end)]
-//    }
-//    
-//    subscript (i: Int) -> String {
-//        return self[Range(i ..< i + 1)]
-//    }
-//    
-//    func substring(from: Int) -> String {
-//        return self[Range(min(from, length) ..< length)]
-//    }
-//    
-//    func substring(to: Int) -> String {
-//        return self[Range(0 ..< max(0, to))]
-//    }
-//}
