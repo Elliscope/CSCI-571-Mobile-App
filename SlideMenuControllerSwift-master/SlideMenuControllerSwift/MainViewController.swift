@@ -6,17 +6,28 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, UITabBarDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     
     //need to override it with the legislator info
     var mainContens = ["data1", "data2", "data3", "data4", "data5", "data6", "data7", "data8", "data9", "data10", "data11", "data12", "data13", "data14", "data15"]
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.registerCellNib(DataTableViewCell.self)
+        
+        Alamofire.request("http://sample-env-1.hamjeipu3q.us-west-2.elasticbeanstalk.com/index.php?category=legistlator").responseJSON { response in
+            
+            var data  = JSON(response.result.value)
+            print(data["results"])
+            
+        }
+        
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -31,7 +42,37 @@ class MainViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
+    
+    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        var searchEngineURLString: NSString! = "";
+        
+        switch item.tag  {
+        case 0:
+            searchEngineURLString = "https://www.bing.com"
+            print(searchEngineURLString)
+            break
+        case 1:
+            searchEngineURLString = "https://www.duckduckgo.com"
+            print(searchEngineURLString)
+            break
+        case 2:
+            searchEngineURLString = "https://www.google.com"
+            print(searchEngineURLString)
+            break
+        default:
+            searchEngineURLString = "https://www.des.com"
+            print(searchEngineURLString)
+            break
+        }
+        
+//        loadSearchEngine(searchEngineURLString);
+    }
+//    
+//    func loadSearchEngine(searchEngineURLString: NSString!) {
+//        var searchEngineURL = NSURL(string: searchEngineURLString)
+//        var searchEngineURLRequest = NSURLRequest(URL: searchEngineURL)
+//        webView.loadRequest(searchEngineURLRequest)
+//    }
 }
 
 
