@@ -25,40 +25,11 @@ class MainViewController: UIViewController, UITabBarDelegate {
         super.viewDidLoad()
         self.tableView.registerCellNib(DataTableViewCell.self)
         
-        Alamofire.request("https://congress.api.sunlightfoundation.com/legislators?per_page=all&order=state__asc").responseJSON { response in
-            let json = JSON(response.result.value!)
-            self.data = json["results"].arrayValue
-            print(self.data)
-            
-            var loop_iterator = 0
-            let data_length =  self.data.count
-            
-            while loop_iterator < data_length{
-                
-                let state_n = self.data[loop_iterator]["state_name"].string!
-                let first_char = state_n[state_n.startIndex]
-                let index = self.state_index_dic[first_char]!
-                self.section_size[index] += 1
-                
-                let key = "\(state_n[state_n.startIndex])"
-                //append the state name to the corresponding section
-                if var stateValues = self.dataDict[key]{
-                    stateValues.append(state_n)
-                    self.dataDict[key]=stateValues
-                } else{
-                    self.dataDict[key] = [state_n]
-                }
-                
-                loop_iterator += 1
-            }
-            
-            print(self.section_size)
-            self.tableView?.reloadData()
-        }
+        loadingData(url: "https://congress.api.sunlightfoundation.com/legislators?per_page=all&order=state__asc")
+        //code the change font size of the Tab Text
         let appearance = UITabBarItem.appearance()
         let attributes = [NSFontAttributeName:UIFont(name: "Arial", size: 22)!]
         appearance.setTitleTextAttributes(attributes, for: .normal)
-        
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -79,14 +50,17 @@ class MainViewController: UIViewController, UITabBarDelegate {
         
         switch item.tag  {
         case 0:
+            loadingData(url: "https://congress.api.sunlightfoundation.com/legislators?per_page=all&order=state__asc")
             searchEngineURLString = "https://www.bing.com"
             print(searchEngineURLString)
             break
         case 1:
+            loadingData(url: "https://congress.api.sunlightfoundation.com/legislators?chamber=senate&per_page=all&order=state__asc")
             searchEngineURLString = "https://www.duckduckgo.com"
             print(searchEngineURLString)
             break
         case 2:
+            loadingData(url: "https://congress.api.sunlightfoundation.com/legislators?chamber=house&per_page=all&order=state__asc")
             searchEngineURLString = "https://www.google.com"
             print(searchEngineURLString)
             break
@@ -99,11 +73,31 @@ class MainViewController: UIViewController, UITabBarDelegate {
 //        loadSearchEngine(searchEngineURLString);
     }
 //    
-//    func loadSearchEngine(searchEngineURLString: NSString!) {
-//        var searchEngineURL = NSURL(string: searchEngineURLString)
-//        var searchEngineURLRequest = NSURLRequest(URL: searchEngineURL)
-//        webView.loadRequest(searchEngineURLRequest)
-//    }
+    func loadingData(url: String!) {
+        Alamofire.request(url).responseJSON { response in
+            let json = JSON(response.result.value!)
+            self.data = json["results"].arrayValue
+            var loop_iterator = 0
+            let data_length =  self.data.count
+            
+            while loop_iterator < data_length{
+                let state_n = self.data[loop_iterator]["state_name"].string!
+                let first_char = state_n[state_n.startIndex]
+                let index = self.state_index_dic[first_char]!
+                self.section_size[index] += 1
+                let key = "\(state_n[state_n.startIndex])"
+                //append the state name to the corresponding section
+                if var stateValues = self.dataDict[key]{
+                    stateValues.append(state_n)
+                    self.dataDict[key]=stateValues
+                } else{
+                    self.dataDict[key] = [state_n]
+                }
+                loop_iterator += 1
+            }
+            self.tableView?.reloadData()
+        }
+    }
 }
 
 
@@ -113,13 +107,17 @@ extension MainViewController : UITableViewDelegate {
     }
     
     
-    //the part of code that navigates towards to the subcontentViewController. Need to pass in parameters.
+//    the part of code that navigates towards to the subcontentViewController. Need to pass in parameters.
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "SubContentsViewController", bundle: nil)
         let subContentsVC = storyboard.instantiateViewController(withIdentifier: "SubContentsViewController") as! SubContentsViewController
         self.navigationController?.pushViewController(subContentsVC, animated: true)
     }
-}
+
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        <#code#>
+//    }
+   }
 
 extension MainViewController : UITableViewDataSource {
     
@@ -147,7 +145,7 @@ extension MainViewController : UITableViewDataSource {
         cell.state.text = self.data[counter+indexPath.row]["state_name"].string!
         
         
-        let img_url = "https://theunitedstates.io/images/congress/original/"+self.data[s+indexPath.row]["bioguide_id"].string!+".jpg"
+        let img_url = "https://theunitedstates.io/images/congress/original/"+self.data[counter+indexPath.row]["bioguide_id"].string!+".jpg"
         let url = URL(string: img_url)
         DispatchQueue.global().async {
             let data = try? Data(contentsOf: url!)

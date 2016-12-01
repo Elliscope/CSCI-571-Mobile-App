@@ -13,6 +13,7 @@
 		33A8F3553CC65403FFC3C986 /* Pods_SlideMenuControllerSwift_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032116D4E6C90A7977400947 /* Pods_SlideMenuControllerSwift_iOS.framework */; };
 		6890BD1F77F84FB6516EE271 /* Pods_SlideMenuControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B27E2EC16E32DFCE9CE12E /* Pods_SlideMenuControllerSwift.framework */; };
 		978526071DEEAE1F0033197D /* LegislatorCustomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978526061DEEAE1F0033197D /* LegislatorCustomeCell.swift */; };
+		97894E211DEFFA79008180B0 /* LegislatorDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97894E201DEFFA79008180B0 /* LegislatorDetailsTableViewController.swift */; };
 		9790CAAC1DED7E5E00947083 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9790CAAB1DED7E5E00947083 /* TabBarController.swift */; };
 		AD844C1845BD798397394BBE /* Pods_SlideMenuControllerSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 951272EFB33210CECBCEABFE /* Pods_SlideMenuControllerSwiftTests.framework */; };
 		C539E6471A315E87003B7CC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C539E6461A315E87003B7CC7 /* AppDelegate.swift */; };
@@ -67,6 +68,7 @@
 		8F704F91F8138FF48FE95022 /* Pods-SlideMenuControllerSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideMenuControllerSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlideMenuControllerSwift/Pods-SlideMenuControllerSwift.release.xcconfig"; sourceTree = "<group>"; };
 		951272EFB33210CECBCEABFE /* Pods_SlideMenuControllerSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlideMenuControllerSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		978526061DEEAE1F0033197D /* LegislatorCustomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegislatorCustomeCell.swift; sourceTree = "<group>"; };
+		97894E201DEFFA79008180B0 /* LegislatorDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegislatorDetailsTableViewController.swift; sourceTree = "<group>"; };
 		9790CAAB1DED7E5E00947083 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		AA1C509A599505DF910D1BFB /* Pods-SlideMenuControllerSwift-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideMenuControllerSwift-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlideMenuControllerSwift-iOS/Pods-SlideMenuControllerSwift-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C539E6411A315E87003B7CC7 /* SlideMenuControllerSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideMenuControllerSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -277,6 +279,7 @@
 				C5BF6A8B1BF340020064C18E /* ExSlideMenuController.swift */,
 				9790CAAB1DED7E5E00947083 /* TabBarController.swift */,
 				978526061DEEAE1F0033197D /* LegislatorCustomeCell.swift */,
+				97894E201DEFFA79008180B0 /* LegislatorDetailsTableViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -586,6 +589,7 @@
 				C5C1CE611A70F3B600B6E411 /* UITableViewExtension.swift in Sources */,
 				C539E64A1A315E87003B7CC7 /* SlideMenuControllerSwift.xcdatamodeld in Sources */,
 				C5BF6A8C1BF340020064C18E /* ExSlideMenuController.swift in Sources */,
+				97894E211DEFFA79008180B0 /* LegislatorDetailsTableViewController.swift in Sources */,
 				9790CAAC1DED7E5E00947083 /* TabBarController.swift in Sources */,
 				C5C1CE5D1A70F27500B6E411 /* BaseTableViewCell.swift in Sources */,
 				C539E66C1A316C78003B7CC7 /* LeftViewController.swift in Sources */,
