@@ -18,6 +18,9 @@ class MainViewController: UIViewController, UITabBarDelegate {
     var state_index_dic:[Character:Int] = ["A":0,"B":1,"C":2,"D":3, "E":4, "F":5,"G":6,"H":7,"I":8,"J":9,"K":10,"L":11,"M":12,"N":13,"O":14,"P":15,"Q":16,"R":17,"S":18,"T":19,"U":20,"V":21,"W":22,"X":23,"Y":24,"Z":25 ]
     var state_to_index_dic:[Int:Character] = [0:"A",1:"B",2:"C",3:"D", 4:"E", 5:"F",6:"G",7:"H",8:"I",9:"J",10:"K",11:"L",12:"M",13:"N",14:"O",15:"P",16:"Q",17:"R",18:"S",19:"T",20:"U",21:"V",22:"W",23:"X",24:"Y",25:"Z" ]
     
+    var dataDict = [String:[String]]()
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.registerCellNib(DataTableViewCell.self)
@@ -36,8 +39,19 @@ class MainViewController: UIViewController, UITabBarDelegate {
                 let first_char = state_n[state_n.startIndex]
                 let index = self.state_index_dic[first_char]!
                 self.section_size[index] += 1
+                
+                let key = "\(state_n[state_n.startIndex])"
+                //append the state name to the corresponding section
+                if var stateValues = self.dataDict[key]{
+                    stateValues.append(state_n)
+                    self.dataDict[key]=stateValues
+                } else{
+                    self.dataDict[key] = [state_n]
+                }
+                
                 loop_iterator += 1
             }
+            
             print(self.section_size)
             self.tableView?.reloadData()
         }
@@ -153,6 +167,11 @@ extension MainViewController : UITableViewDataSource {
         }
         return String(describing: self.state_to_index_dic[section]!)
     }
+    
+   func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        return self.arrIndexSection
+    }
+    
 }
 
 extension MainViewController : SlideMenuControllerDelegate {
