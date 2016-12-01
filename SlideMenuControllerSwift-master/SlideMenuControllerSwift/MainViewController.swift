@@ -8,6 +8,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import SwiftSpinner
 
 class MainViewController: UIViewController, UITabBarDelegate {
 
@@ -24,7 +25,7 @@ class MainViewController: UIViewController, UITabBarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.registerCellNib(DataTableViewCell.self)
-        
+        SwiftSpinner.show("Fetching Data...")
         loadingData(url: "https://congress.api.sunlightfoundation.com/legislators?per_page=all&order=state__asc")
         //code the change font size of the Tab Text
         let appearance = UITabBarItem.appearance()
@@ -50,21 +51,25 @@ class MainViewController: UIViewController, UITabBarDelegate {
         
         switch item.tag  {
         case 0:
+            SwiftSpinner.show("Fetching Data...")
             loadingData(url: "https://congress.api.sunlightfoundation.com/legislators?per_page=all&order=state__asc")
             searchEngineURLString = "https://www.bing.com"
             print(searchEngineURLString)
             break
         case 1:
-            loadingData(url: "https://congress.api.sunlightfoundation.com/legislators?chamber=senate&per_page=all&order=state__asc")
+            SwiftSpinner.show("Fetching Data...")
+            loadingData(url: "https://congress.api.sunlightfoundation.com/legislators?chamber=senate&per_page=all&order=last_name__asc")
             searchEngineURLString = "https://www.duckduckgo.com"
             print(searchEngineURLString)
             break
         case 2:
-            loadingData(url: "https://congress.api.sunlightfoundation.com/legislators?chamber=house&per_page=all&order=state__asc")
+            SwiftSpinner.show("Fetching Data...")
+            loadingData(url: "https://congress.api.sunlightfoundation.com/legislators?chamber=house&per_page=all&order=last_name__asc")
             searchEngineURLString = "https://www.google.com"
             print(searchEngineURLString)
             break
         default:
+            SwiftSpinner.show("Fetching Data...")
             searchEngineURLString = "https://www.des.com"
             print(searchEngineURLString)
             break
@@ -79,6 +84,7 @@ class MainViewController: UIViewController, UITabBarDelegate {
             self.data = json["results"].arrayValue
             var loop_iterator = 0
             let data_length =  self.data.count
+            self.section_size = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
             
             while loop_iterator < data_length{
                 let state_n = self.data[loop_iterator]["state_name"].string!
@@ -96,6 +102,10 @@ class MainViewController: UIViewController, UITabBarDelegate {
                 loop_iterator += 1
             }
             self.tableView?.reloadData()
+            DispatchQueue.main.async {
+                SwiftSpinner.hide()
+            }
+            
         }
     }
 }
@@ -131,7 +141,7 @@ extension MainViewController : UITableViewDataSource {
      
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)  as! LegislatorCustomeCell
-
+        
         var s = 0;
         let limit = indexPath.section
         var counter = 0
