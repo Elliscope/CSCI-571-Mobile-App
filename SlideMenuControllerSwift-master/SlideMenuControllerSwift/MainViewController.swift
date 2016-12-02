@@ -28,6 +28,7 @@ class MainViewController: UIViewController, UITabBarDelegate {
         SwiftSpinner.show("Fetching Data...")
         loadingData(url: "https://congress.api.sunlightfoundation.com/legislators?per_page=all&order=state__asc")
         //code the change font size of the Tab Text
+        
         let appearance = UITabBarItem.appearance()
         let attributes = [NSFontAttributeName:UIFont(name: "Arial", size: 22)!]
         appearance.setTitleTextAttributes(attributes, for: .normal)
