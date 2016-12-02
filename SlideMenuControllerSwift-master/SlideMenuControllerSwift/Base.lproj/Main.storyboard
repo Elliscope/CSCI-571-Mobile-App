@@ -141,7 +141,7 @@
                     <size key="freeformSize" width="600" height="600"/>
                     <connections>
                         <outlet property="tableView" destination="MNw-nN-8ak" id="OEx-Z5-027"/>
-                        <segue destination="vQg-Pp-WtV" kind="show" id="NtR-NM-26W"/>
+                        <segue destination="vQg-Pp-WtV" kind="show" identifier="SendDataSegue" id="j5i-Uv-J95"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -151,7 +151,7 @@
         <!--Legislator Details Table View Controller-->
         <scene sceneID="4te-KP-YFz">
             <objects>
-                <viewController id="vQg-Pp-WtV" customClass="LegislatorDetailsTableViewController" customModule="SlideMenuControllerSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LegislatorDetailsTableViewController" id="vQg-Pp-WtV" customClass="LegislatorDetailsTableViewController" customModule="SlideMenuControllerSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uxk-IO-hnm"/>
                         <viewControllerLayoutGuide type="bottom" id="0Cx-Mz-PHP"/>
@@ -310,7 +310,6 @@
         <!--Non Menu Controller-->
         <scene sceneID="d7w-0k-xlq">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BqV-Y1-lxd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="NonMenuController" id="dnB-Mf-802" customClass="NonMenuController" customModule="SlideMenuControllerSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="P9h-CD-Kay"/>
@@ -344,6 +343,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="600"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BqV-Y1-lxd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.59999999999999" y="2863.2683658170918"/>
         </scene>

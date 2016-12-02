@@ -52,7 +52,7 @@ class MainViewController: UIViewController, UITabBarDelegate {
         switch item.tag  {
         case 0:
             SwiftSpinner.show("Fetching Data...")
-            loadingData(url: "https://congress.api.sunlightfoundation.com/legislators?per_page=all&order=state__asc")
+            loadingData(url: "https://congress.api.sunlightfoundation.com/legislators?per_page=all&order=state__asc,last_name_asc")
             searchEngineURLString = "https://www.bing.com"
             print(searchEngineURLString)
             break
@@ -75,9 +75,9 @@ class MainViewController: UIViewController, UITabBarDelegate {
             break
         }
         
-//        loadSearchEngine(searchEngineURLString);
+
     }
-//    
+ 
     func loadingData(url: String!) {
         Alamofire.request(url).responseJSON { response in
             let json = JSON(response.result.value!)
@@ -122,10 +122,24 @@ extension MainViewController : UITableViewDelegate {
         let storyboard = UIStoryboard(name: "SubContentsViewController", bundle: nil)
         let subContentsVC = storyboard.instantiateViewController(withIdentifier: "SubContentsViewController") as! SubContentsViewController
         self.navigationController?.pushViewController(subContentsVC, animated: true)
+        
+//        _ = tableView.indexPathForSelectedRow!
+//        if let _ = tableView.cellForRow(at: indexPath) {
+//            let data_string = self.data[indexPath.row]["state_name"].string!
+//            self.performSegue(withIdentifier: "SendDataSegue", sender: data_string)
+//        }
+        
     }
 
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        <#code#>
+//        if segue.identifier == "SendDataSegue" {
+//            if let destination = segue.destination as? LegislatorDetailsTableViewController {
+////                let path = tableView.indexPathForSelectedRow
+////                let cell = tableView.cellForRow(at: path!) as! LegislatorCustomeCell
+////                destination.viaSegue = (cell.state.text!)
+//                destination.viaSegue = sender as! String
+//            }
+//        }
 //    }
    }
 
